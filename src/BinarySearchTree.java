@@ -12,7 +12,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> {
         }
     }
 
-    public boolean findElement(T data) {
+    public boolean searchElement(T data) {
         Node<T> cur = root;
         while (cur != null) {
             if (data.compareTo(cur.data) > 0) {
@@ -198,7 +198,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> {
         tree.inorderPrintCall();
         tree.getHeightTreeCall();
         tree.getNumValuesCall();
-        boolean flag = tree.findElement(7);
+        boolean flag = tree.searchElement(7);
         System.out.println(flag);
     }
 }
